@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doclistbuilder"
+version = "0.1.0"
+description = "A flexible framework for building and transforming lists through context managers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Ian McEwan", email = ""}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "flake8>=4.0",
+    "pylint>=2.0",
+    "black>=22.0",
+]
+
+[project.scripts]
+doclistbuilder = "doclistbuilder.cli:main"
